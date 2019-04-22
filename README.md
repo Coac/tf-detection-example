@@ -1,6 +1,9 @@
 # tf-detection-example
 A simple example to how to use Tensorflow detection API on a custom dataset
 
+![Detector in action](docs/ssbu.gif)
+
+<sub><sup>*Detector in action (from https://youtu.be/eYUohOTqn7g)*</sup></sub>
 
 ## Dataset
 Download and install [labelImg tool](https://github.com/tzutalin/labelImg) 
