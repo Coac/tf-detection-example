@@ -44,7 +44,8 @@ The model used in this example is the `ssdlite_mobilenet_v2_coco_2018_05_09`, yo
 ```
 python download_model.py
 ```
-If you changed the model, download also the adequate pipeline config [here](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs)
+If you changed the model, download also the adequate pipeline config [here](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs) 
+and edit the file by replacing all the `PATH_TO_BE_CONFIGURED`.
 
 
 ## Training
@@ -58,7 +59,7 @@ python ${TF_MODELS_PATH}/research/object_detection/model_main.py \
     --num_eval_steps=100
 ```
 
-You can follow the training using tensorboard
+You can follow the training using Tensorboard
 ```
 tensorboard --logdir=finetuned_model
 ```
@@ -79,4 +80,10 @@ python ${TF_MODELS_PATH}/research/object_detection/export_inference_graph.py \
 ```
 
 ## Inference
-TODO
+To run a inference in a image
+```
+python inference.py
+```
+
+
+![inference](inference.jpg)
